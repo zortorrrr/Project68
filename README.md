@@ -43,20 +43,11 @@ pip install websocket-client requests numpy matplotlib
 
 ## Project Structure
 
-crypto_dashboard/
-├── main.py                 # Entry point
-├── components/
-│   ├── __init__.py
-│   ├── ticker.py          # CryptoTicker class
-│   ├── orderbook.py       # OrderBookPanel class
-│   ├── technical.py       # TechnicalAnalysisPanel class
-│   └── futures.py         # FuturesPanel class
-├── utils/
-│   ├── __init__.py
-│   ├── binance_api.py     # API helper functions
-│   └── indicators.py      # Technical analysis calculations
-├── config.py              # Configuration (symbols, colors, etc.)
-└── requirements.txt       # Dependencies
+crypto_dashboard/ ├── main.py # Application Entry Point ├── config.py # Configuration (symbols, colors, etc.) ├── requirements.txt # Dependencies │ ├── components/ # UI Panels │ ├── init.py
+
+│ ├── ticker.py # CryptoTicker class │ ├── orderbook.py # OrderBookPanel class │ ├── technical.py # TechnicalAnalysisPanel class │ └── futures.py # FuturesPanel class │ └── utils/ # Utility and Logic ├── init.py
+
+├── binance_api.py # API helper functions └── indicators.py # Technical analysis calculations
 
 ## Interface Controls
 # Default View:
