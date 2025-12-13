@@ -1,0 +1,5 @@
+websocket-client
+requests
+numpy
+matplotlib
+# sudo apt install python3-tk
