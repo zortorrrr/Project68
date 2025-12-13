@@ -43,22 +43,11 @@ pip install websocket-client requests numpy matplotlib
 
 ## Project Structure
 
-crypto_dashboard/
-├── main.py                 # Entry point: Initializes the main GUI (Tkinter) and manages the application lifecycle.
-├── config.py               # Configuration: Stores default symbols, color palettes, API endpoints, and other constants.
-├── requirements.txt        # Dependencies: Lists all necessary Python libraries (e.g., websocket-client, matplotlib).
-│
-├── components/             # UI Panels (Manages the visual parts of the dashboard)
-│   ├── __init__.py         
-│   ├── ticker.py           # CryptoTicker class: Manages the display of real-time price, volume, and stats.
-│   ├── orderbook.py        # OrderBookPanel class: Manages the market depth visualization and order book updates.
-│   ├── technical.py        # TechnicalAnalysisPanel class: Manages the chart display and indicator plots.
-│   └── futures.py          # FuturesPanel class: Manages display logic for Futures-specific data (if implemented).
-│
-└── utils/                  # Utility and Logic (Non-GUI support functions)
-    ├── __init__.py         
-    ├── binance_api.py      # API helper functions: Handles all Binance REST API calls and retry logic for data fetching.
-    └── indicators.py       # Technical analysis calculations: Contains functions for calculating SMA, EMA, etc.
+crypto_dashboard/ ├── main.py # Entry point ├── config.py # Configuration (symbols, colors, etc.) ├── requirements.txt # Dependencies │ ├── components/ # UI Panels │ ├── init.py
+
+│ ├── ticker.py # CryptoTicker class │ ├── orderbook.py # OrderBookPanel class │ ├── technical.py # TechnicalAnalysisPanel class │ └── futures.py # FuturesPanel class │ └── utils/ # Utility and Logic ├── init.py
+
+├── binance_api.py # API helper functions └── indicators.py # Technical analysis calculations
 
 ## Interface Controls
 # Default View:
