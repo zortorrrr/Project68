@@ -50,19 +50,19 @@ crypto_dashboard/ ├── main.py # Entry point ├── config.py # Configur
 ├── binance_api.py # API helper functions └── indicators.py # Technical analysis calculations
 
 ## Interface Controls
-# Default View:
+### Default View:
 - The dashboard initializes with a default primary symbol (e.g., BTCUSDT) set as the focus.
 - Core data panels (Last Price, Bid/Ask Spread, Vol/Ratio) are visible initially.
 
-# Symbol Switching (Changing Primary Asset):
+### Symbol Switching (Changing Primary Asset):
 - Click any currency button in the header bar (e.g., BTC, ETH, BNB, SOL, ADA) under the SELECT COIN: prompt.
 - This action immediately stops the previous WebSocket streams and starts a new set of streams for the selected symbol across the entire dashboard.
 
-# Toggle Panel Visibility:
+### Toggle Panel Visibility:
 - Candle Chart: Use the Hide/Show Candle Chart checkbox to collapse or expand the K-Line Candlestick Chart and its associated Volume panel.
 - Order Book: Use the Hide/Show Order Book (Top 20) checkbox to collapse or expand the Order Book Snapshot panel.
 
-# Data Depth Control:
+### Data Depth Control:
 - Inside the Order Book panel, click the Show All 20 Levels button to toggle the display from the default limited view to the maximum available depth.
 
 ## Final Output Screenshot
